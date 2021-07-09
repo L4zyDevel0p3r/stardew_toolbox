@@ -596,11 +596,12 @@ class Ui_MainWindow(object):
             save.save()
 
     def change_qicoins(self):
-        save = ToolBox(save_name=self.cb_saves.currentText())
-        value = self.input_ch_qicoins.text()
+        if self.check_save():
+            save = ToolBox(save_name=self.cb_saves.currentText())
+            value = self.input_ch_qicoins.text()
 
-        save.change_qicoins(value=value)
-        save.save()
+            save.change_qicoins(value=value)
+            save.save()
 
 
 if __name__ == "__main__":
