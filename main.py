@@ -564,11 +564,12 @@ class Ui_MainWindow(object):
             return True
 
     def change_name(self):
-        save = ToolBox(save_name=self.cb_saves.currentText())
-        new_name = self.input_ch_name.text()
+        if self.check_save():
+            save = ToolBox(save_name=self.cb_saves.currentText())
+            new_name = self.input_ch_name.text()
 
-        save.change_name(new_name=new_name)
-        save.save()
+            save.change_name(new_name=new_name)
+            save.save()
 
     def change_farm_name(self):
         save = ToolBox(save_name=self.cb_saves.currentText())
