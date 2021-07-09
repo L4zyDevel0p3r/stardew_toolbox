@@ -46,6 +46,7 @@ class Ui_MainWindow(object):
         MainWindow.setFixedSize(800, 650)
         MainWindow.setWindowTitle("Stardew ToolBox")
         MainWindow.setAccessibleDescription("")
+        MainWindow.setWindowIcon(QtGui.QIcon("img/icon.png"))
 
         # <------------------- centralwidget ------------------->
         self.centralwidget = QtWidgets.QWidget(MainWindow)
