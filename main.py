@@ -515,19 +515,17 @@ class Ui_MainWindow(object):
         self.tabWidget.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
-        # If the player doesn't have a save, the program raises an error.
-        if len(self.cb_saves.currentText()) != 0:
-            # If there is a save, the update_line_edits_text function is called.
-            self.update_line_edits_text()
+        self.update_line_edits_text()
 
     def update_line_edits_text(self):
-        save = ToolBox(save_name=self.cb_saves.currentText())
+        if self.check_save():
+            save = ToolBox(save_name=self.cb_saves.currentText())
 
-        self.input_ch_name.setText(save.get(key="name"))
-        self.input_ch_fname.setText(save.get(key="farmName"))
-        self.input_ch_fthing.setText(save.get(key="favoriteThing"))
-        self.input_ch_money.setText(save.get(key="money"))
-        self.input_ch_qicoins.setText(save.get(key="clubCoins"))
+            self.input_ch_name.setText(save.get(key="name"))
+            self.input_ch_fname.setText(save.get(key="farmName"))
+            self.input_ch_fthing.setText(save.get(key="favoriteThing"))
+            self.input_ch_money.setText(save.get(key="money"))
+            self.input_ch_qicoins.setText(save.get(key="clubCoins"))
 
     @staticmethod
     def generate_msg_box(title: str, text: str, icon):
