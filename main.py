@@ -31,6 +31,7 @@ SOFTWARE.
 """
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
 from toolbox import SAVES_PATH, ToolBox
 import os
 
@@ -527,6 +528,15 @@ class Ui_MainWindow(object):
         self.input_ch_fthing.setText(save.get(key="favoriteThing"))
         self.input_ch_money.setText(save.get(key="money"))
         self.input_ch_qicoins.setText(save.get(key="clubCoins"))
+
+    @staticmethod
+    def generate_msg_box(title: str, text: str, icon):
+        msg_box = QMessageBox()
+        msg_box.setWindowTitle(title)
+        msg_box.setText(text)
+        msg_box.setIcon(icon)
+
+        return msg_box
 
     def change_name(self):
         save = ToolBox(save_name=self.cb_saves.currentText())
