@@ -580,11 +580,12 @@ class Ui_MainWindow(object):
             save.save()
 
     def change_favorite_thing(self):
-        save = ToolBox(save_name=self.cb_saves.currentText())
-        value = self.input_ch_fthing.text()
+        if self.check_save():
+            save = ToolBox(save_name=self.cb_saves.currentText())
+            value = self.input_ch_fthing.text()
 
-        save.change_favorite_thing(value=value)
-        save.save()
+            save.change_favorite_thing(value=value)
+            save.save()
 
     def change_money(self):
         save = ToolBox(save_name=self.cb_saves.currentText())
