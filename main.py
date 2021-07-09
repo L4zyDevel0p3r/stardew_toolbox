@@ -538,6 +538,33 @@ class Ui_MainWindow(object):
 
         return msg_box
 
+    def check_save(self):
+        """
+        This function checks to see if there is a save named 'save_name'
+        or if there are save files in that save folder.
+        """
+        save_name = self.cb_saves.currentText()
+        if len(save_name) == 0:
+            msg_box = self.generate_msg_box(
+                title="Error",
+                text="There is no save in your saves folder!",
+                icon=QMessageBox.Critical
+            )
+            msg_box.exec_()
+            return False
+
+        else:
+            if not ToolBox.save_exists(name=save_name):
+                msg_box = self.generate_msg_box(
+                    title="Error",
+                    text=f"There is no \"SaveGameInfo\" file or \"{save_name}\" file in the {save_name} folder!",
+                    icon=QMessageBox.Critical
+                )
+                msg_box.exec_()
+                return False
+
+            return True
+
     def change_name(self):
         save = ToolBox(save_name=self.cb_saves.currentText())
         new_name = self.input_ch_name.text()
