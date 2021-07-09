@@ -41,6 +41,21 @@ class ToolBox:
 
         self.read()
 
+    @classmethod
+    def save_exists(cls, name: str):
+        """
+        Checks if there is a save with the specified name.
+        """
+        save_path = os.path.join(SAVES_PATH, name + "\\")
+
+        if os.path.exists(save_path):
+            files = os.listdir(save_path)
+
+            if "SaveGameInfo" in files and name in files:
+                return True
+
+        return False
+
     def read(self):
         """
         Reads SaveGameInfo file and Farm file.
