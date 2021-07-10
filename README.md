@@ -3,6 +3,10 @@
 **Please make backup of your Saves before using!**  
 **Close the game before using this software.**
 
+To find your saves, press **Win + R**, then type **%AppData%** and press Enter.  
+Then go to: **StardewValley/Saves**
+
+
 # Stardew ToolBox
 
 ToolBox for Stardew Valley.
