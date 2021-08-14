@@ -642,6 +642,14 @@ class Ui_MainWindow(object):
             save.change_qicoins(value=value)
             save.save()
 
+    def change_qigems(self):
+        if self.check_save():
+            save = ToolBox(save_name=self.cb_saves.currentText())
+            value = self.input_ch_qigems.text()
+
+            save.change_qigems(value=value)
+            save.save()
+
 
 if __name__ == "__main__":
     import sys
