@@ -325,6 +325,11 @@ class Ui_MainWindow(object):
         self.lbl_ch_qigems.setAlignment(QtCore.Qt.AlignCenter)
         self.lbl_ch_qigems.setObjectName("lbl_ch_qigems")
 
+        # <------------------- Change Qi Gems LineEdit ------------------->
+        self.input_ch_qigems = QtWidgets.QLineEdit(self.frm_ch_qigems)
+        self.input_ch_qigems.setGeometry(QtCore.QRect(50, 80, 140, 27))
+        self.input_ch_qigems.setObjectName("input_ch_qigems")
+
         # <------------------- tabWidget ------------------->
         self.tabWidget.addTab(self.tab_toolbox, "ToolBox")
 
