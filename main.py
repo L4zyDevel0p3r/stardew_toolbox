@@ -311,6 +311,13 @@ class Ui_MainWindow(object):
         self.img_qicoin.setAlignment(QtCore.Qt.AlignCenter)
         self.img_qicoin.setObjectName("img_qicoin")
 
+        # <------------------- Change Qi Gems Frame ------------------->
+        self.frm_ch_qigems = QtWidgets.QFrame(self.gb_economy)
+        self.frm_ch_qigems.setGeometry(QtCore.QRect(540, 30, 240, 180))
+        self.frm_ch_qigems.setFrameShape(QtWidgets.QFrame.StyledPanel)
+        self.frm_ch_qigems.setFrameShadow(QtWidgets.QFrame.Raised)
+        self.frm_ch_qigems.setObjectName("frm_ch_qigems")
+
         # <------------------- tabWidget ------------------->
         self.tabWidget.addTab(self.tab_toolbox, "ToolBox")
 
