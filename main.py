@@ -339,6 +339,15 @@ class Ui_MainWindow(object):
         self.btn_ch_qigems.setText("Change")
         self.btn_ch_qigems.setObjectName("btn_ch_qigems")
 
+        # <------------------- Qi Gem Image ------------------->
+        self.img_qigem = QtWidgets.QLabel(self.frm_ch_qigems)
+        self.img_qigem.setGeometry(QtCore.QRect(10, 80, 27, 27))
+        self.img_qigem.setText("")
+        self.img_qigem.setPixmap(QtGui.QPixmap("img/QiGem.png"))
+        self.img_qigem.setScaledContents(True)
+        self.img_qigem.setAlignment(QtCore.Qt.AlignCenter)
+        self.img_qigem.setObjectName("img_qigem")
+
         # <------------------- tabWidget ------------------->
         self.tabWidget.addTab(self.tab_toolbox, "ToolBox")
 
