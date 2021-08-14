@@ -330,6 +330,15 @@ class Ui_MainWindow(object):
         self.input_ch_qigems.setGeometry(QtCore.QRect(50, 80, 140, 27))
         self.input_ch_qigems.setObjectName("input_ch_qigems")
 
+        # <------------------- Change Qi Gems Button ------------------->
+        self.btn_ch_qigems = QtWidgets.QPushButton(self.frm_ch_qigems)
+        self.btn_ch_qigems.setGeometry(QtCore.QRect(50, 125, 140, 30))
+        font = QtGui.QFont()
+        font.setPointSize(9)
+        self.btn_ch_qigems.setFont(font)
+        self.btn_ch_qigems.setText("Change")
+        self.btn_ch_qigems.setObjectName("btn_ch_qigems")
+
         # <------------------- tabWidget ------------------->
         self.tabWidget.addTab(self.tab_toolbox, "ToolBox")
 
