@@ -133,3 +133,11 @@ class ToolBox:
 
         self._update_sgi(key="clubCoins", value=value)
         self._update_ff(key="clubCoins", value=value)
+
+    def change_qigems(self, value: str):
+        """
+        Change the character's Qi Gems to the specified value.
+        """
+
+        self._update_sgi(key="qiGems", value=value)
+        self._update_ff(key="qiGems", value=value)
