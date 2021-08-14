@@ -318,6 +318,13 @@ class Ui_MainWindow(object):
         self.frm_ch_qigems.setFrameShadow(QtWidgets.QFrame.Raised)
         self.frm_ch_qigems.setObjectName("frm_ch_qigems")
 
+        # <------------------- Change Qi Gems Label ------------------->
+        self.lbl_ch_qigems = QtWidgets.QLabel(self.frm_ch_qigems)
+        self.lbl_ch_qigems.setGeometry(QtCore.QRect(60, 30, 121, 30))
+        self.lbl_ch_qigems.setText("Qi Gems")
+        self.lbl_ch_qigems.setAlignment(QtCore.Qt.AlignCenter)
+        self.lbl_ch_qigems.setObjectName("lbl_ch_qigems")
+
         # <------------------- tabWidget ------------------->
         self.tabWidget.addTab(self.tab_toolbox, "ToolBox")
 
