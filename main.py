@@ -338,6 +338,7 @@ class Ui_MainWindow(object):
         self.btn_ch_qigems.setFont(font)
         self.btn_ch_qigems.setText("Change")
         self.btn_ch_qigems.setObjectName("btn_ch_qigems")
+        self.btn_ch_qigems.clicked.connect(self.change_qigems)
 
         # <------------------- Qi Gem Image ------------------->
         self.img_qigem = QtWidgets.QLabel(self.frm_ch_qigems)
