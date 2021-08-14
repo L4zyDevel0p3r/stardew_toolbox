@@ -564,6 +564,7 @@ class Ui_MainWindow(object):
             self.input_ch_fthing.setText(save.get(key="favoriteThing"))
             self.input_ch_money.setText(save.get(key="money"))
             self.input_ch_qicoins.setText(save.get(key="clubCoins"))
+            self.input_ch_qigems.setText(save.get(key="qiGems"))
 
     @staticmethod
     def generate_msg_box(title: str, text: str, icon):
