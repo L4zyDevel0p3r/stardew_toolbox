@@ -3,6 +3,10 @@
 **Please make backup of your Saves before using!**  
 **Close the game before using this software.**
 
+To find your saves, press **Win + R**, then type **%AppData%** and press Enter.  
+Then go to: **StardewValley/Saves**
+
+
 # Stardew ToolBox
 
 ToolBox for Stardew Valley.
@@ -21,4 +25,5 @@ New features will be added.
 
 ### Windows
 
-(I add it soon)
+- https://www.mediafire.com/file/9xol1tigvf5e0yf/stardew_toolbox.rar/file
+- Just extract the file and run 'Stardew ToolBox.exe'
