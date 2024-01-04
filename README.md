@@ -25,5 +25,4 @@ New features will be added.
 
 ### Windows
 
-- https://www.mediafire.com/file/9xol1tigvf5e0yf/stardew_toolbox.rar/file
-- Just extract the file and run 'Stardew ToolBox.exe'
+- Download link removed
